@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmCityBank.Api", "CharmCityBank.Api\CharmCityBank.Api.csproj", "{E13EE8B0-E6EF-4FE3-B0A1-63E518A229BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharmCityBank.Test", "CharmCityBank.Test\CharmCityBank.Test.csproj", "{F11D30E5-AA3A-43F6-BC8A-D3BA03658B2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13EE8B0-E6EF-4FE3-B0A1-63E518A229BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13EE8B0-E6EF-4FE3-B0A1-63E518A229BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13EE8B0-E6EF-4FE3-B0A1-63E518A229BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13EE8B0-E6EF-4FE3-B0A1-63E518A229BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11D30E5-AA3A-43F6-BC8A-D3BA03658B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11D30E5-AA3A-43F6-BC8A-D3BA03658B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11D30E5-AA3A-43F6-BC8A-D3BA03658B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11D30E5-AA3A-43F6-BC8A-D3BA03658B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

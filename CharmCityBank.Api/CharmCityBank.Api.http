@@ -1,0 +1,6 @@
+@CharmCityBank.Api_HostAddress = http://localhost:5169
+#
+#GET {{CharmCityBank.Api_HostAddress}}/weatherforecast/
+#Accept: application/json
+
+###
