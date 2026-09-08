@@ -1,5 +1,7 @@
 using System.Security.Claims;
 using System.Text;
+using CharmCityBank.Api.Extensions;
+using CharmCityBank.Api.Features.Auth.Register;
 using CharmCityBank.Api.Infrastructure.Authentication;
 using CharmCityBank.Api.Infrastructure.Identity;
 using CharmCityBank.Api.Infrastructure.Persistence;
@@ -59,7 +61,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 builder.Services.AddScoped<TokenService>();
-
+builder.Services.AddUserManagement();
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())

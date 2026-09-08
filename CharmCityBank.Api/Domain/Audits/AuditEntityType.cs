@@ -2,8 +2,8 @@ namespace CharmCityBank.Api.Domain.Audits;
 
 public enum AuditEntityType : byte
 {
-    User = 1,
-    Account = 2,
-    Transaction = 3,
+    Customer = 1,
+    BankAccount = 2,
+    BankTransaction = 3,
     Transfer = 4
 }
