@@ -26,6 +26,13 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : IdentityDbCo
             .StartsAt(1)
             .IncrementsBy(1);
 
+        modelBuilder.Entity<ApplicationUser>(entity =>
+        {
+            entity.Property(c => c.IsDisabled)
+                .IsRequired()
+                .HasDefaultValue(false);
+        });
+        
         // Customer
         modelBuilder.Entity<Customer>(entity =>
         {
@@ -41,10 +48,6 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : IdentityDbCo
             entity.Property(c => c.LastName)
                 .IsRequired()
                 .HasMaxLength(100);
-
-            entity.Property(c => c.IsDisabled)
-                .IsRequired()
-                .HasDefaultValue(false);
 
             entity.HasIndex(c => new { c.FirstName, c.LastName });
 

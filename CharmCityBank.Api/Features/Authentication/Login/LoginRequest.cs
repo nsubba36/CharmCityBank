@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CharmCityBank.Api.Features.Auth.Login;
+namespace CharmCityBank.Api.Features.Authentication.Login;
 
 public record LoginRequest(
     [Required] [EmailAddress] string Email,

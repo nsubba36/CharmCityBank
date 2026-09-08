@@ -11,7 +11,6 @@ public class Customer
     public string LastName { get; set; } = string.Empty;
     public DateTime CreatedAtUtc { get; set;} = DateTime.UtcNow;
     public DateTime UpdatedAtUtc { get;set; } = DateTime.UtcNow;
-    public bool IsDisabled { get; set; }
     public ICollection<Address> Addresses { get; set; } = [];
     public ICollection<BankAccount> BankAccounts { get; set; } = [];
 }

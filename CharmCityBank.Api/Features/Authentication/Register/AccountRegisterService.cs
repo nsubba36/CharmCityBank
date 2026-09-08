@@ -5,7 +5,7 @@ using CharmCityBank.Api.Infrastructure.Identity;
 using CharmCityBank.Api.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Identity;
 
-namespace CharmCityBank.Api.Features.Auth.Register;
+namespace CharmCityBank.Api.Features.Authentication.Register;
 
 public class AccountRegisterService(
     UserManager<ApplicationUser> userManager,

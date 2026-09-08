@@ -4,5 +4,5 @@ namespace CharmCityBank.Api.Infrastructure.Identity;
 
 public class ApplicationUser : IdentityUser
 {
-    
+    public bool IsDisabled { get; set; }
 }

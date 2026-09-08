@@ -20,10 +20,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Features\Auth\Reset\" />
-      <Folder Include="Features\Auth\Update\" />
+      <Folder Include="Features\Authentication\Reset\" />
+      <Folder Include="Features\Authentication\Update\" />
       <Folder Include="Features\Audits\" />
-      <Folder Include="Features\Authentication\" />
       <Folder Include="Features\Customers\" />
       <Folder Include="Features\Statements\" />
       <Folder Include="Features\Transactions\" />

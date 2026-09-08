@@ -1,7 +1,6 @@
 using System.Security.Claims;
 using System.Text;
 using CharmCityBank.Api.Extensions;
-using CharmCityBank.Api.Features.Auth.Register;
 using CharmCityBank.Api.Infrastructure.Authentication;
 using CharmCityBank.Api.Infrastructure.Identity;
 using CharmCityBank.Api.Infrastructure.Persistence;
@@ -83,6 +82,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 // just for test
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => Results.Redirect("/scalar"));
 
 app.Run();
