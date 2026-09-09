@@ -20,6 +20,9 @@ public class TokenService (IOptions<JwtSettings> jwtSetting)
             new(JwtRegisteredClaimNames.Email, user.Email ?? string.Empty),
             new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         };
+        Console.WriteLine($"UTC Now: {DateTime.UtcNow:O}");
+        Console.WriteLine($"Expire Minutes: {_jwtSettings.ExpireMinutes}");
+        Console.WriteLine($"Expires: {expiresAtUtc:O}");
 
         claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 

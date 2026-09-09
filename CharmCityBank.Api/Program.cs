@@ -61,6 +61,8 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddUserManagement();
+builder.Services.AddAccountManagement();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
