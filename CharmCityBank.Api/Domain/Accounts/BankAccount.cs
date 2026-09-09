@@ -21,5 +21,14 @@ public class BankAccount
     public ICollection<BankTransaction> Transactions { get; set; } = [];
     public ICollection<Transfer> OutgoingTransfers { get; set; } = [];
     public ICollection<Transfer> IncomingTransfers { get; set; } = [];
-    
+
+    public void Deposit(decimal amount)
+    {
+        Balance += amount;
+    }
+
+    public void Withdraw(decimal amount)
+    {
+        Balance -= amount;
+    }
 }

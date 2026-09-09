@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CharmCityBank.Api.Features.Customers.ManageRole;
-
+// TODO: Add to AuditLog table
 public class ManageRoleService(
     AppDbContext dbContext,
     RoleManager<IdentityRole> roleManager,
